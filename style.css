@@ -164,6 +164,8 @@ section h2{
    font-size:36px;
    position:fixed;
    z-index:10;
+   left:10px;
+   top:10px;
  }
 
   /* not sure whether we need it */
@@ -193,11 +195,13 @@ section h2{
 /* Contact Form */
 
 
-.contact-form
-
 .form{
   font-family:Arial, Helvetica, sans-serif;
   padding: 1rem;
+}
+
+.contact-form p{
+margin-left:1rem;
 }
 
 .row{
