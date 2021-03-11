@@ -8,11 +8,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
 }
 
-body{
-  padding: 1rem;
-}
+
 /* Primitives */
 
 .center {
@@ -57,12 +56,38 @@ section {
 }
 
 /* Primitives */
-
-
-
-main{
-  max-width: 90vw;
+header{
+  display: flex;
 }
+.logo-warapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ align-items: center;
+  color:white;
+  background-color: #FF9BB7;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.logo-warapper h1{
+font-size: 5vw;
+}
+.logo-warapper p{
+  font-size: 3vw;
+}
+.background-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background-logo img{
+  width: 50%;
+}
+
+
+
 
 ul{
   display: grid;
@@ -75,7 +100,11 @@ li{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  column-gap: 1rem;
+  border:solid 1px palevioletred;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+padding: 0.5rem;
 }
 
 li p, li h3{
@@ -100,6 +129,7 @@ ul li img{
     grid-template-columns: repeat(4,minmax(0,1fr))!important;
 }
 
+
 }
 
 
@@ -107,6 +137,7 @@ ul li img{
 
 section h2{
   font-size: 3rem;
+  margin-left: 1rem;
 }
 /* Contact Form */
 
