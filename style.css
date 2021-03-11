@@ -140,17 +140,22 @@ section h2{
 }
 
  /* Nav bar */
+
+nav {
+  left: -100%;
+}
+
 .menu {
   width: 100vw;
-  /* left: -100%; */
+  /* left: 0; */
   height: 100vh;
   top:0%;
   margin: 0;
   background: white;
   text-transform: uppercase;
   /* transition: left 0.55s ease;
-  overflow: hidden;
-  position: fixed; */
+  overflow: hidden;*/
+  /* position: fixed; */
 }
 
  .menu-checkbox,
@@ -168,20 +173,14 @@ section h2{
    top:10px;
  }
 
-  /* not sure whether we need it */
-  .menu-toggle:focus{
-    outline:2px solid;
-  }
-
  .menu a{
    display:block;
  }
 
- /* .menu-checkbox:checked + .menu{
-   display:block;
- } */
 .menu.active{
   display:block;
+  left: 0;
+  position: fixed;
 }
  
 .nav-links{
@@ -193,7 +192,6 @@ section h2{
 
 
 /* Contact Form */
-
 
 .form{
   font-family:Arial, Helvetica, sans-serif;

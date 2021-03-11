@@ -2,22 +2,19 @@
 //Initialise variables for html elements
 const menuToggle = document.querySelector("#menu-toggle");
 const menu = document.querySelector("#menu");
+const links = document.getElementsByClassName("nlink");
 
 //Initialise variables for Javascript commented out as not needed
 
-/* const enterKeyCode = 13;
-const spaceKeyCode = 32; */
-
-
-menuToggle.addEventListener("click", function(event) {
-   /* if(event.keyCode == enterKeyCode || event.keyCode == spaceKeyCode) { */
-        // let menuOpen = menu.checked;
-        let menuOpen = menu.classList.contains("active");
-        let newMenuOpenStatus= !menuOpen;
-       
-        menuToggle.setAttribute("aria-expanded", newMenuOpenStatus)
-        menu.classList.toggle("active")
-   console.log(newMenuOpenStatus)
-   
-   // }
+menuToggle.addEventListener("click", function() {
+   let menuOpen = menu.classList.contains("active");
+   let newMenuOpenStatus= !menuOpen;
+   menuToggle.setAttribute("aria-expanded", newMenuOpenStatus)
+   menu.classList.toggle("active")
 });
+
+for (let i = 0; i < links.length; i++) {
+   links[i].addEventListener('click', function(event) {
+      menu.classList.toggle("active");
+   });
+}
