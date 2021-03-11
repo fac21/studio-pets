@@ -1,5 +1,5 @@
 :root{
-  --bg-colour: ;
+  --bg-colour: #0A144B;
 
 }
 
@@ -246,18 +246,20 @@ textarea{
 }
 
 button{
-  background-color: rgb(49, 49, 240);
+  background-color:var(--bg-colour);
   color: white;
   font-size: 1rem;
- /* float: right; */
-  padding: 0.75rem;
+  padding: 0.5rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-  box-shadow: 0 2vw 4vw 0 grey;
 }
-
+.btn-form{
+  box-shadow: 0 2vw 4vw 0 grey;
+  float: right;
+  padding: 0.75rem;
+}
 
 footer{
   clear: both;
@@ -266,5 +268,5 @@ footer{
 
 
 
-}
+
 
