@@ -9,6 +9,9 @@
   box-sizing: border-box;
 }
 
+body{
+  padding: 1rem;
+}
 /* Primitives */
 
 .center {
@@ -34,13 +37,86 @@
 }
 
 .stack-lg > * + * {
-  margin-top: 2rem;
+  margin-top: 20rem;
 }
 
-.stack-xl > * + * {
+.stack-xl > * + *{
   margin-top: 4rem;
 }
 
-.about-us{
-  
+/* General */
+
+section {
+  margin-top: 4rem;
+}
+
+section h2{
+  font-size: 3rem;
+}
+/* Contact Form */
+
+.contact-form
+
+.form{
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+
+.row > *{
+  min-width: 7rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.row label{
+  width: 15rem;
+  text-align: left;
+}
+
+input[type=text], 
+input[type=email]{
+  border-radius: 10px;
+  min-width: 15rem;
+  border: 0.5px solid black;
+  flex-grow: 1;
+}
+
+fieldset, textarea{
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+fieldset div{
+  padding: 0.25rem;
+}
+
+textarea{
+  margin-top: 1rem;
+  resize: none;
+  width: 100%;
+  height: 10ch;
+}
+
+button{
+  background-color: rgb(49, 49, 240);
+  color: white;
+  font-size: 1rem;
+  float: right;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2vw 4vw 0 grey;
+}
+
+
+footer{
+  clear: both;
 }
