@@ -43,38 +43,64 @@
    </section>
 
   <!--placehoders to add and required to check-->
-  <section class='contact-form'>
+  <section class='contact-form center stack-sm'>
 
     <h2>Get in touch</h2>
-    <p>some cheesy sentence....</p>
+    <p>to leap into your future</p>
 
-    <form action="">
-      <label for="first">First Name</label>
-      <input type="text" name="first" id="first" placeholder="" required>
-      <label for="last" required>Last Name</label>
-      <input type="text" name="last" id="last" placeholder="" required>
-      <label for="company">Company</label>
-      <input type="text" name="company" id="company">
-      <label for="job">Job Title</label> 
-      <input type="text" name="job" id="job">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required>
+    <form action="" class="stack-md form">
+    <div class="stack-sm flexbox">
+      <div class='row'>
+        <label for="first">First Name *</label>
+        <input type="text" name="first" id="first" required>
+      </div>
+      <div class='row'>
+        <label for="last" required>Last Name *</label>
+        <input type="text" name="last" id="last" required>
+      </div>
+      <div class='row'>
+        <label for="company">Company</label>
+        <input type="text" name="company" id="company">
+      </div>
+      <div class='row'>
+        <label for="job">Job Title</label> 
+        <input type="text" name="job" id="job">
+      </div>
+      <div class='row'>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+    </div>
     <fieldset>
       <legend>Enquiry Type</legend>
-      <label for="enquiry">Learn about our services</label>
-      <input type="radio" name="enquiry" id="enquiry" value="enquiry-services">
-      <label for="enquiry">Scope my project and obtain pricing</label>
-      <input type="radio" name="enquiry" id="enquiry" value="enquiry-pricing">
-      <label for="enquiry">Something else</label>
-      <input type="radio" name="enquiry" id="enquiry" value="enquiry-other">
+      <div>
+        <input type="radio" name="enquiry" id="enquiry" value="enquiry-services">
+        <label for="enquiry">Learn more about Frog's services</label>
+      </div>
+      <div>
+        <input type="radio" name="enquiry" id="enquiry" value="enquiry-pricing">
+        <label for="enquiry">Scope my project and obtain pricing</label>  
+      </div>
+      <div>
+        <input type="radio" name="enquiry" id="enquiry" value="enquiry-other">
+        <label for="enquiry">Just say Hi!</label>
+      </div>
     </fieldset>
-      <textarea name="message" id="message" cols="30" rows="10"></textarea>
-      <label for="consent-a">Inform me about your services and upcoming events</label>
+    <div >
+      <label for="message">Leave us a note...</label>
+      <br>
+      <textarea name="message" id="message"></textarea>
+    </div>
+    <div>
       <input type="checkbox" name="consent-a" id="consent-a" checked>
-      <label for="consent-b">I agree to your privacy policy and terms of use</label>
+      <label for="consent-a">Go ahead and stalk me</label>
+    </div>
+    <div>
       <input type="checkbox" name="consent-b" id="consent-b" required>
-
-      <input type="submit" value="Submit">
+      <label for="consent-b">I didn't read your Privacy Policy or Terms of Use</label>
+    </div>
+    <button>Click Me!</button>
+    <!-- <input type="submit" value="Submit"> -->
     </form>
   </section>
 
