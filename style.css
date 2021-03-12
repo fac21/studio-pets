@@ -64,7 +64,7 @@ header{
   flex-direction: column;
   justify-content: center;
  align-items: center;
-  color:white;
+  color:var(--bg-colour);
   background-color: #FF9BB7;
   width: 100vw;
   height: 100vh;
@@ -118,6 +118,7 @@ ul li img{
   border-radius: 50%;
   width: 10rem;
   height: 10rem;
+  object-fit: cover;
 }
 @media (min-width: 640px){
   ul{
